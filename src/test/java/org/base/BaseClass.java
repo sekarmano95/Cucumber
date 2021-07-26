@@ -36,7 +36,7 @@ public class BaseClass {
 
 	public void launchBrowser(String browser) {
 		if (browser.equals("Chrome")) {
-			WebDriverManager.chromedriver().version("91").setup();
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
