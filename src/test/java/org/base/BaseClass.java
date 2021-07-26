@@ -20,6 +20,7 @@ public class BaseClass {
 	public static final String AUTOMATE_ACCESS_KEY = "pRTuFn1M8yEpYKqPM6sA";
 	public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY
 			+ "@hub-cloud.browserstack.com/wd/hub";
+
 	public void browserStackBroswerLaunch() throws MalformedURLException {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("os_version", "10");
@@ -29,43 +30,46 @@ public class BaseClass {
 		caps.setCapability("os", "Windows");
 		caps.setCapability("name", "BStack-[Java] Sample Test"); // test name
 		caps.setCapability("build", "BStack Build Number 1"); // CI/CD job or build name
-		 driver = new RemoteWebDriver(new URL(URL), caps);
+		driver = new RemoteWebDriver(new URL(URL), caps);
 
 	}
+
 	public void launchBrowser(String browser) {
-		switch (browser) {
-		case "Chrome":
+		if (browser.equals("Chrome")) {
 			WebDriverManager.chromedriver().version("91").setup();
 			driver = new ChromeDriver();
-			break;
-		case "Firefox":
+		} else if (browser.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			break;
-		case "Edge":
+		} else if (browser.equals("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			break;
+		}
 
-		default:
+		else {
 			System.out.println("Invalid browser Name");
 		}
-		
+
 	}
+
 	public void implicitWait(long sec) {
 		driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
 
 	}
+
 	public void launchUrl(String url) {
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
+
 	public void fillTextBox(WebElement e, String value) {
 		e.sendKeys(value);
 	}
+
 	public void btnClick(WebElement e) {
 		e.click();
 	}
+
 	public void browserquit() {
 		driver.quit();
 	}
