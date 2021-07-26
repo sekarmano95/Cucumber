@@ -114,4 +114,129 @@ formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should be in Facebook page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_should_be_in_Facebook_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate registration functionality1",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@sanity"
+    },
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user has to fill firstname and lastname details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_has_to_fill_firstname_and_lastname_details()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user to click the sign up button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_to_click_the_sign_up_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user successfully register",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_successfully_register()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user should be in Facebook page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_should_be_in_Facebook_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To validate registration functionality2",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "The user has to fill firstname and lastname details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_has_to_fill_firstname_and_lastname_details()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user to click the sign up button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_to_click_the_sign_up_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "The user successfully register",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.the_user_successfully_register()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

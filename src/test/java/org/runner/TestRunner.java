@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features="src/test/resources", 
                  glue="org.stepdefinition",
                  dryRun=false, monochrome=true,
-                 tags= {"@smoke"},
+//                 tags= {"@smoke"},
                  plugin= {"pretty",
                 		 "html:src\\test\\resources\\Reports",
                 		 "json:src\\test\\resources\\Reports\\jsonreport.json",

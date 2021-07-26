@@ -21,7 +21,7 @@ public class LoginSteps extends BaseClass {
 	@When("The user has to fill {string}  and {string}")
 	public void the_user_has_to_fill_and(String user, String pass) {
 		 manager = PageObjectManager.getManager();
-		 l = manager.getLoginPage();
+		 l = new LoginPage();
 		fillTextBox(l.getTxtUsername(), user);
 		fillTextBox(l.getTxtPassword(), pass);
 	}
@@ -40,7 +40,7 @@ public class LoginSteps extends BaseClass {
 
 	@When("The user has to fill firstname and lastname details")
 	public void the_user_has_to_fill_firstname_and_lastname_details() {
-		 r = manager.getRegistrationPage();
+		 r = new RegistrationPage();
 		btnClick(r.getBtnCreate());
 		fillTextBox(r.getTxtFirstName(), "Manoj");
 		fillTextBox(r.getTxtLastName(), "Kumar");

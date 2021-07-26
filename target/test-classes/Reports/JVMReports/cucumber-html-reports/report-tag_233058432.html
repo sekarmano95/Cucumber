@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Facebook</td>
-      <td>22 Jul 2021, 21:21</td>
+      <td>26 Jul 2021, 21:00</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@regression</td>
-          <td      class="passed"    >1</td>
+          <td >0</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1357991600">1.357</td>
+          <td class="duration" data-value="129446400">0.129</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.357</span>
+  <span class="lead-duration duration">0.129</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -220,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">Hooks.beforeScenario1()</span>
 
-  <span class="lead-duration duration">23.936</span>
+  <span class="lead-duration duration">6.727</span>
 
           </div>
 
@@ -253,38 +253,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">The user has to fill <span class="argument">&quot;mano&quot;</span>  and <span class="argument">&quot;5678&quot;</span></span>
 
-  <span class="lead-duration duration">1.348</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">The user has to  clcik the login button</span>
-
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.128</span>
 
 </div>
 
@@ -296,15 +269,26 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError</a>
+          <a>org.openqa.selenium.NoSuchSessionException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at org.stepdefinition.LoginSteps.the_user_has_to_clcik_the_login_button(LoginSteps.java:31)
-	at &#10045;.The user has to  clcik the login button(file:src/test/resources/Features/login.feature:9)
+        <pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MANO', ip: '192.168.43.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at org.base.BaseClass.fillTextBox(BaseClass.java:66)
+	at org.stepdefinition.LoginSteps.the_user_has_to_fill_and(LoginSteps.java:25)
+	at &#10045;.The user has to fill &quot;mano&quot;  and &quot;5678&quot;(file:src/test/resources/Features/login.feature:8)
 </pre>
       </div>
     </div>
@@ -324,11 +308,38 @@ $(document).ready(function() {
       <div class="step">
 
 
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">The user has to  clcik the login button</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">The user should be in invalid page</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -373,7 +384,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">Hooks.afterScenario1(Scenario)</span>
 
-  <span class="lead-duration duration">2.723</span>
+  <span class="lead-duration duration">1.214</span>
 
           </div>
 
@@ -386,13 +397,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_1050673504.png" download target="_blank">
+      <a href="embeddings/embedding_1023793660.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1050673504.png">
+        <img src="embeddings/embedding_1023793660.png">
       </div>
     </div>
   </div>
